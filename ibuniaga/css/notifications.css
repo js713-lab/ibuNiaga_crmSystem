@@ -1,0 +1,122 @@
+.notifications-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.notification-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.notification-header {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.notification-header:hover {
+    background-color: #f1f3f5;
+}
+
+.notification-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.notification-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notification-title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.unread-badge {
+    background-color: #007bff;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+}
+
+.notification-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.notification-content.show {
+    padding: 1rem;
+    max-height: 500px;
+}
+
+.notification-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.notification-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #ffd7d9;
+}
+
+.fas-chevron-down {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.fas-chevron-down.rotate {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+@media (max-width: 768px) {
+    .notifications-section {
+        padding: 1rem;
+    }
+    
+    .notification-meta {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}

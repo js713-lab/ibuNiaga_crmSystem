@@ -1,0 +1,36 @@
+; Site Information
+site_name = "ibuniaga"
+tagline = "您的业务成长伙伴"
+
+; Navigation
+home = "主页"
+about = "关于我们"
+courses = "课程"
+apply = "申请"
+inbox = "收件箱"
+settings = "设置"
+profile = "个人资料"
+login = "登录"
+logout = "登出"
+
+; Forms
+submit = "提交"
+cancel = "取消"
+save = "保存"
+delete = "删除"
+confirm = "确认"
+edit = "编辑"
+
+; Messages
+welcome = "欢迎来到ibuniaga"
+login_success = "登录成功"
+login_failed = "用户名或密码无效"
+register_success = "注册成功"
+register_failed = "注册失败"
+logout_success = "登出成功"
+
+; Application Status
+status_submitted = "已提交"
+status_pending = "审核中"
+status_approved = "已批准"
+status_rejected = "已拒绝"

@@ -1,0 +1,191 @@
+.application-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Progress Bars Section */
+.progress-bars-section {
+    margin-bottom: 2rem;
+}
+
+.progress-bar-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar-header {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-bar-title {
+    font-weight: 500;
+    color: #333;
+}
+
+.progress-steps {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ddd;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.progress-step {
+    position: relative;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-step.active {
+    border-color: #BC4A46;
+    background: #BC4A46;
+    color: #fff;
+}
+
+.progress-step.completed {
+    border-color: #4CAF50;
+    background: #4CAF50;
+    color: #fff;
+}
+
+.progress-label {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.5rem;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+.status-message {
+    padding: 1rem;
+    text-align: center;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+/* Application Form */
+.application-form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+.form-header {
+    margin-bottom: 2rem;
+}
+
+.form-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.form-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #BC4A46;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #BC4A46;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #a63f3b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .application-container {
+        padding: 1rem;
+    }
+
+    .progress-steps {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .progress-steps::before {
+        width: 2px;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
+    .progress-label {
+        left: calc(100% + 10px);
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: left;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+}

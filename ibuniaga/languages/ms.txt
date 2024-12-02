@@ -1,0 +1,36 @@
+; Site Information
+site_name = "ibuniaga"
+tagline = "Rakan Pertumbuhan Perniagaan Anda"
+
+; Navigation
+home = "Laman Utama"
+about = "Tentang Kami"
+courses = "Kursus"
+apply = "Mohon"
+inbox = "Peti Masuk"
+settings = "Tetapan"
+profile = "Profil"
+login = "Log Masuk"
+logout = "Log Keluar"
+
+; Forms
+submit = "Hantar"
+cancel = "Batal"
+save = "Simpan"
+delete = "Padam"
+confirm = "Sahkan"
+edit = "Edit"
+
+; Messages
+welcome = "Selamat datang ke ibuniaga"
+login_success = "Log masuk berjaya"
+login_failed = "Nama pengguna atau kata laluan tidak sah"
+register_success = "Pendaftaran berjaya"
+register_failed = "Pendaftaran gagal"
+logout_success = "Log keluar berjaya"
+
+; Application Status
+status_submitted = "Dihantar"
+status_pending = "Dalam Semakan"
+status_approved = "Diluluskan"
+status_rejected = "Ditolak"

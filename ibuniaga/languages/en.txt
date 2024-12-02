@@ -1,0 +1,36 @@
+; Site Information
+site_name = "ibuniaga"
+tagline = "Your Business Growth Partner"
+
+; Navigation
+home = "Home"
+about = "About"
+courses = "Courses"
+apply = "Apply"
+inbox = "Inbox"
+settings = "Settings"
+profile = "Profile"
+login = "Login"
+logout = "Logout"
+
+; Forms
+submit = "Submit"
+cancel = "Cancel"
+save = "Save"
+delete = "Delete"
+confirm = "Confirm"
+edit = "Edit"
+
+; Messages
+welcome = "Welcome to ibuniaga"
+login_success = "Login successful"
+login_failed = "Invalid username or password"
+register_success = "Registration successful"
+register_failed = "Registration failed"
+logout_success = "Logout successful"
+
+; Application Status
+status_submitted = "Submitted"
+status_pending = "Under Review"
+status_approved = "Approved"
+status_rejected = "Rejected"
